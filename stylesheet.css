@@ -132,7 +132,7 @@ body {
     color: rgb(230, 130, 130);
     box-shadow: 0 0 20px rgb(230, 130, 130);
 }
-.btn-box {
+.btn-box1 {
     display: inline-block;
     padding: 12px 20px;
     background: black;
@@ -145,7 +145,7 @@ body {
     animation: slideTop .5s ease forwards;
 
 }
-.btn-box:hover {
+.btn-box1:hover {
     box-shadow: 0 0 5px rgb(230, 130, 130),
     0 0 25px rgb(230, 130, 130), 0 0 50px rgb(230, 130, 130),
     0 0 100px rgb(230, 130, 130), 0 0 200px rgb(230, 130, 130)
@@ -157,19 +157,16 @@ body {
     background-size: cover;
     background-position: center;
     padding: 95px 10% 0px;
-    padding-bottom: 90px;
-    margin-top: 130px;
+    /* padding-bottom: 90px; */
+    /* margin-top: 130px; */
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
 }
 .about-img {
-        display: flex;
+        display: inline-flex;
         justify-content: center;
-        align-items: self-end;
-        height: auto; 
-        margin: 0;
-        padding-bottom: 60px;       
+           
 }
 .about-img img {
     padding-bottom: 30%;
@@ -211,15 +208,18 @@ body {
     margin-bottom: 1.5rem;
     overflow: hidden;
 }
+
+.project-section {
+    /* height: 100vh; */
+}
 #project {
     color: black;
     font-size: 20px;
     line-height: 1.4;
-    padding: 30px 10% 10px;
+    padding: 80px 10% 30px;
     position: relative;
     display: grid;
-    height: 100vh;
-    margin-top: 130px;
+    /* margin-top: 130px; */
     align-items: self-end;
 }
 .pro {
@@ -293,10 +293,8 @@ body {
 .project-list div:hover {
     transform: translateY(-10px);
 }
-.btn-box {
+.btn-box2 {
     display: inline-block;
-    max-width: 50
-    px;
     padding: 12px 20px;
     background: black;
     border-radius: 40px;
@@ -308,11 +306,32 @@ body {
     animation: slideTop .5s ease forwards;
 
 }
-.btn-box:hover {
+.btn-box2:hover {
     box-shadow: 0 0 5px rgb(230, 130, 130),
     0 0 25px rgb(230, 130, 130), 0 0 50px rgb(230, 130, 130),
     0 0 100px rgb(230, 130, 130), 0 0 200px rgb(230, 130, 130)
 }
+
+.btn-box3 {
+    display: inline-block;
+    max-width: 10.5rem;
+    padding: 12px 20px;
+    background: black;
+    border-radius: 40px;
+    font-size: 15px;
+    color:rgb(230, 130, 130);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    animation: slideTop .5s ease forwards;
+
+}
+.btn-box3:hover {
+    box-shadow: 0 0 5px rgb(230, 130, 130),
+    0 0 25px rgb(230, 130, 130), 0 0 50px rgb(230, 130, 130),
+    0 0 100px rgb(230, 130, 130), 0 0 200px rgb(230, 130, 130)
+}
+
 .contact-section {
     color: black;
     font-size: 20px;
@@ -321,8 +340,9 @@ body {
     position: relative;
     display: grid;
     height: 100vh;
-    margin-top: 360px;
+    /* margin-top: 360px; */
     align-items: self-end;
+    list-style: none;
 }
 .contact {
     display: grid;
@@ -331,7 +351,6 @@ body {
     gap: 20px;
     padding-right: 60px;
     padding-bottom: 90px;
-    margin-top: 130px;
 }
 .contact-text h2 {
     text-align: center;
@@ -471,5 +490,50 @@ body {
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@Media (max-width: 768px) {
+    .about {
+        position: relative;
+        display: grid;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        /* gap: 1.5rem; */
+    }
+
+    .about-text h2 {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 0.7rem;
+        animation: slideRight .5s ease forwards;
+    }
+
+    .about-img img {
+        padding-bottom: 30%;
+        max-height: 370px;
+        width: 190px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin-top: 90px;
+    }
+
+    .about-text p {
+        font-size: 17px; 
+        line-height: 1.1;
+        margin-bottom: 1.2rem;
+        overflow: hidden;
+    }
+
+    .about-text h4 {
+        font-size: 20px; 
+        font-weight: 600;
+        color: rgb(230, 130, 130);
+        line-height: 1.4;
+        margin-bottom: 1rem;
     }
 }
